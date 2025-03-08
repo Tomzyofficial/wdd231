@@ -1,0 +1,116 @@
+@media screen and (max-width: 991px) {
+  header #menu-icon {
+    display: block;
+  }
+
+  header nav {
+    display: block;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    height: 60vh;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    left: -100%;
+  }
+
+  nav a {
+    display: block;
+    line-height: 50px;
+    padding-left: 10px;
+  }
+
+  nav.show {
+    left: 0;
+  }
+
+  main,
+  .container {
+    margin: 10px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .first-section,
+  .sec-section,
+  .third-section {
+    width: 100%;
+  }
+
+  .third-section {
+    height: 80vh;
+
+  }
+
+  .sec-section img {
+    width: 100%;
+  }
+
+  .top-header h3 {
+    padding: 5px 20px;
+  }
+
+  .third-section .course-work {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (width: 375px) {
+  .third-section {
+    height: 90vh;
+  }
+}
+
+@media (width: 1024px) {
+  header #menu-icon {
+    display: block;
+  }
+
+  header nav {
+    display: block;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    height: 60vh;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    left: -100%;
+  }
+
+  nav a {
+    display: block;
+    line-height: 50px;
+    padding-left: 10px;
+  }
+
+  nav.show {
+    left: 0;
+  }
+
+  main,
+  .container {
+    margin: 10px;
+  }
+
+  .first-section {
+    width: 100%;
+  }
+
+  .sec-section {
+    width: 100%;
+  }
+
+  .sec-section img {
+    width: 100%;
+  }
+}

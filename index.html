@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="WDD 231 - Front End Web Development">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Chukwuebuka Ibeh">
+  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/small-screen.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+  <script src="scripts/getdates.js" defer></script>
+  <title>Ibeh Chukwuebuka - WDD 231</title>
+</head>
+
+<body>
+  <header>
+    <div class="top-nav">
+      <img src="images/me.webp" alt="profile picture" loading="lazy">
+      <span>Chukwuebuka Cornelius Ibeh</span>
+      <div id="menu-icon"></div>
+    </div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Chamber</a>
+      <a href="#">GitHub Profile</a>
+      <a href="https://www.linkedin.com/in/chukwuebuka-ibeh-2a7312239/" target="_blank">LinkedIn</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Home</h1>
+  </main>
+  <section class="container">
+    <section class="first-section">
+      <h2>Course Work</h2>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </section>
+    <section class="sec-section">
+      <h2>Toloria, Madagascar</h2>
+      <figure>
+        <img src="images/tree.webp" alt="Tree image">
+        <figcaption>Baobob Tree</figcaption>
+      </figure>
+    </section>
+    <section class="third-section">
+      <h2>Web and Conputer Programming Certificate</h2>
+      <div class="top-header">
+        <h3>All</h3>
+        <h3>CSE</h3>
+        <h3>WDD</h3>
+      </div>
+      <hr>
+      <div class="course-work">
+        <button class="btn-active">CSE 110</button>
+        <button class="btn-active">WDD 130</button>
+        <button class="btn-active">CSSE 111</button>
+        <button class="btn-unactive">CSE 210</button>
+        <button class="btn-active">WDD 131</button>
+        <button class="btn-unactive">WDD 231</button>
+      </div>
+    </section>
+  </section>
+  <footer>
+    <div>
+      <p>&copy; <span id="currentyear"></span> &#127804; Chukwuebuka Ibeh &#127804; Nigeria</p>
+      <p>Last Updated: <span id="lastModified"></span></p>
+    </div>
+    <img src="images/flag.jpg" alt="Nigerian Flag">
+  </footer>
+</body>
+
+</html>
