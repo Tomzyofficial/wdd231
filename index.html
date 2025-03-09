@@ -15,9 +15,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
     rel="stylesheet">
-  <script src="scripts/getdates.js" defer></script>
+  <script src="scripts/app.js" defer></script>
   <title>Ibeh Chukwuebuka - WDD 231</title>
 </head>
 
@@ -41,11 +41,7 @@
   <section class="container">
     <section class="first-section">
       <h2>Course Work</h2>
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
+      <ul id="course-credit"></ul>
     </section>
     <section class="sec-section">
       <h2>Toloria, Madagascar</h2>
@@ -57,18 +53,13 @@
     <section class="third-section">
       <h2>Web and Conputer Programming Certificate</h2>
       <div class="top-header">
-        <h3>All</h3>
-        <h3>CSE</h3>
-        <h3>WDD</h3>
+        <button id="all-courses">All</button>
+        <button id="cse-courses">CSE</button>
+        <button id="wdd-courses">WDD</button>
       </div>
       <hr>
       <div class="course-work">
-        <button class="btn-active">CSE 110</button>
-        <button class="btn-active">WDD 130</button>
-        <button class="btn-active">CSSE 111</button>
-        <button class="btn-unactive">CSE 210</button>
-        <button class="btn-active">WDD 131</button>
-        <button class="btn-unactive">WDD 231</button>
+        <ul id="course-list"></ul>
       </div>
     </section>
   </section>

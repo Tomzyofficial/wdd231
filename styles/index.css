@@ -4,7 +4,7 @@
   --white: #fff;
   --nav-size: 1rem;
   --section-header-bg-color: rgb(49, 118, 135);
-  --btn-bg-color: peru;
+  /* --btn-bg-color: peru; */
 }
 
 * {
@@ -145,11 +145,13 @@ main,
   padding-top: 10px;
 }
 
-.top-header h3 {
+.top-header button {
   background-color: var(--nav-bg-color);
+  color: var(--white);
   border-radius: 10px;
   padding: 5px 50px;
   gap: 10px;
+  border: none;
 }
 
 .third-section hr {
@@ -157,24 +159,31 @@ main,
   margin-top: 10px;
 }
 
-.third-section .course-work {
+.course-work #course-list {
   margin-top: 20px;
   display: grid;
   grid-template-columns: repeat(3, auto);
   gap: 10px;
   padding: 10px;
+  list-style: none;
 }
 
-.course-work .btn-active {
-  background-color: var(--btn-bg-color);
+#course-list .completed {
+  background-color: var(--header-bg-color);
   padding: 10px;
   border-radius: 10px;
+  text-align: center;
+  color: var(--white);
 }
 
-.course-work .btn-unactive {
-  padding: 10px;
+#course-list .not-completed {
+  background-color: var(--nav-bg-color);
   border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+  color: var(--white);
 }
+
 
 footer {
   background-color: var(--header-bg-color);
