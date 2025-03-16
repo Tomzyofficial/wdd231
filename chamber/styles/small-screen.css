@@ -5,7 +5,7 @@
   --white: #fff;
   --size: 1rem;
   --gray-color: gray;
-  ---other-gray-color: #ddd;
+  ---card-bg-color: #ddd;
   /* --btn-bg-color: peru; */
 }
 
@@ -169,7 +169,7 @@ h1,
 .first-section,
 .sec-section,
 .third-section {
-  background-color: var(---other-gray-color);
+  background-color: var(---card-bg-color);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   height: 300px;
 }
@@ -220,7 +220,7 @@ article {
 }
 
 .card {
-  background-color: var(---other-gray-color);
+  background-color: var(---card-bg-color);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   color: var(--black-color);
 }
