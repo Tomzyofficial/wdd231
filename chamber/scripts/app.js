@@ -41,9 +41,9 @@ async function fetchData() {
     }
     const res = await response.json();
     res.forEach(element => {
-      const createSection = document.createElement("section");
-      createSection.classList.add("card");
-      createSection.innerHTML = `
+      const createDiv = document.createElement("div");
+      createDiv.classList.add("card");
+      createDiv.innerHTML = `
         <div class="top-card">
           <h2>${element.name}</h2>
           <p>${element.tagline}</p>
@@ -57,7 +57,7 @@ async function fetchData() {
           </div>
         </div>
       `;
-      document.querySelector(".cards").appendChild(createSection);
+      document.querySelector(".cards").appendChild(createDiv);
     });
   } catch (error) {
     console.log(error.message);
