@@ -1,0 +1,79 @@
+[
+  {
+    "name": "Tech Innovators Inc.",
+    "address": "123 Silicon Valley, CA, USA",
+    "phone": "+1-800-555-1234",
+    "email": "info@techinnovator.com",
+    "website": "https://www.techinnovators.com",
+    "image": "tech_innovative.webp",
+    "membershipLevel": 3,
+    "description": "Leading provider of AI-driven solutions for businesses.",
+    "tagline": "Innovating Tomorrow, Today"
+  },
+  {
+    "name": "Green Energy Solutions",
+    "address": "45 Renewable St, Austin, TX, USA",
+    "phone": "+1-800-555-5678",
+    "email": "info@green.com",
+    "website": "https://www.greenenergy.com",
+    "image": "green_energy.webp",
+    "membershipLevel": 2,
+    "description": "Sustainable energy solutions for a greener planet.",
+    "tagline": "Powering a Sustainable Future"
+  },
+  {
+    "name": "Swift Logistics",
+    "address": "789 Supply Chain Blvd, New York, NY, USA",
+    "phone": "+1-800-555-9876",
+    "email": "info@swift.com",
+    "website": "https://www.swiftlogistics.com",
+    "image": "swift.webp",
+    "membershipLevel": 1,
+    "description": "Fast and reliable logistics and transportation services.",
+    "tagline": "Delivering Speed, Ensuring Trust"
+  },
+  {
+    "name": "MedTech Solutions",
+    "address": "321 Health Park, Boston, MA, USA",
+    "phone": "+1-800-555-4321",
+    "email": "info@medtech.com",
+    "website": "https://www.medtechsolutions.com",
+    "image": "medtech.webp",
+    "membershipLevel": 3,
+    "description": "Innovative healthcare technology for hospitals and clinics.",
+    "tagline": "Technology for a Healthier Tomorrow"
+  },
+  {
+    "name": "Cloud9 Hosting",
+    "address": "100 Data Center Lane, San Francisco, CA, USA",
+    "phone": "+1-800-555-8765",
+    "email": "info@cloud.com",
+    "website": "https://www.cloud9hosting.com",
+    "image": "cloud.webp",
+    "membershipLevel": 2,
+    "description": "Secure cloud hosting and data storage solutions.",
+    "tagline": "Your Data, Always in the Clouds"
+  },
+  {
+    "name": "NextGen Robotics",
+    "address": "55 AI Drive, Seattle, WA, USA",
+    "phone": "+1-800-555-1111",
+    "email": "info@nextgen.com",
+    "website": "https://www.nextgenrobotics.com",
+    "image": "nextgen.webp",
+    "membershipLevel": 3,
+    "description": "Developing the future of robotics and automation.",
+    "tagline": "Building the Future, One Robot at a Time"
+  },
+  {
+    "name": "Eco-Friendly Packaging",
+    "address": "77 Sustainable Way, Denver, CO, USA",
+    "phone": "+1-800-555-2222",
+    "email": "info@eco-friendly.com",
+    "website": "https://www.ecopackaging.com",
+    "image": "eco.webp",
+    "membershipLevel": 1,
+    "description": "Biodegradable and recyclable packaging solutions.",
+    "tagline": "Sustainable Packaging for a Greener World"
+  }
+]

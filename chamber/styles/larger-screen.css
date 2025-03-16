@@ -1,0 +1,101 @@
+@media screen and (min-width: 991px) {
+  nav .nav-menu {
+    display: flex;
+    height: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    position: relative;
+  }
+
+  nav .nav-menu a {
+    padding-top: 0;
+  }
+
+  .toggler #toggler-icon {
+    display: none;
+  }
+
+  .container,
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+
+  .first-section {
+    width: 500px;
+  }
+
+  /* Beginning of Grid or list toggler */
+  article {
+    display: flex;
+    place-content: center;
+    gap: 10px;
+  }
+
+  article button {
+    background-color: lightgreen;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    color: #000;
+    cursor: pointer;
+  }
+
+  .cards.list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .list .card {
+    background-color: transparent;
+    box-shadow: none;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+  }
+
+  .list .card:nth-child(even) {
+    background-color: aquamarine;
+  }
+
+  .list .card .top-card {
+    border-bottom: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    gap: 30px;
+  }
+
+  .list .card .bottom img {
+    display: none;
+  }
+
+  .list .card .bottom .contact {
+    display: flex;
+  }
+
+  /* End of grid or list toggler */
+
+  footer {
+    justify-content: space-around;
+    flex-direction: row;
+    height: 30vh;
+    gap: 0;
+  }
+
+  footer div:first-child {
+    width: 30%;
+  }
+
+  footer div:last-child {
+    width: 30%;
+  }
+}
+
+/* @media screen and (height: 453px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
+} */

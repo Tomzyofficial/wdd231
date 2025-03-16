@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="A chamber of commerce is a local organization of businesses that work together to strengthen the business interests of the group. The intent of a chamber of commerce is to foster networking and to advocate on the behalf of the community.">
+  <meta name="keywords" content="Small Business Owner, Corporate Executive">
+  <meta name="author" content="Chukwuebuka Ibeh">
+  <meta property="og:title" content="Chamber of Commerce" />
+  <meta property="og:type" content="video.movie" />
+  <meta property="og:url" content="https://www.imdb.com/title/tt0117500/" />
+  <meta property="og:image" content="https://ia.media-imdb.com/images/rock.jpg" />
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small-screen.css">
+  <link rel="stylesheet" href="styles/larger-screen.css">
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+  <title>Timbuktu Chamber of Commerce</title>
+  <script src="scripts/app.js" defer></script>
+  <script src="scripts/grid-list.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <a href="#" id="logo">
+      <img src="images/favicon.ico" alt="Site logo" loading="eager">
+    </a>
+    <nav>
+      <div class="nav-menu">
+        <a href="/" class="active">Home</a>
+        <a href="#">Directory</a>
+        <a href="#">Join</a>
+        <a href="#">Discover</a>
+      </div>
+      <div class="toggler">
+        <img src="images/night-mode.webp" alt="Night mode" loading="eager">
+        <div id="toggler-icon"></div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div>
+      <img src="images/background-img.webp" alt="Hero image" loading="eager">
+      <a href="#">Keynote Tickets</a>
+    </div>
+    <h1>Home</h1>
+  </main>
+  <section class="container">
+    <section class="first-section">
+      <h2>Events</h2>
+    </section>
+    <section class="sec-section">
+      <h2>Current Weather</h2>
+      <div class="weather">
+        <img src="images/weather_cloud.svg" alt="Weather" loading="lazy">
+        <ul>
+          <li><strong>75&deg;</strong>F</li>
+          <li>Partly Cloudy</li>
+          <li>High: 85&deg;</li>
+          <li>Low: 52&deg;</li>
+          <li>Humidity: 34%</li>
+          <li>Sunrise: 7:30am</li>
+          <li>Sunset: 9:59pm</li>
+        </ul>
+      </div>
+    </section>
+    <section class="third-section">
+      <h2>Weather Forecast</h2>
+      <ul>
+        <li>Today: <strong>90&deg;F</strong></li>
+        <li>Wednesday: <strong>89&deg;F</strong></li>
+        <li>Thursday: <strong>68&deg;F</strong></li>
+      </ul>
+    </section>
+  </section>
+  <article>
+    <button id="grid">⏹️Grid</button>
+    <button id="list">📄List</button>
+  </article>
+  <section class="cards"></section>
+  <footer>
+    <div>
+      <h3>Timbuktu Chamber of Commerce</h3>
+      <p>10 Rue De la Paix Timbuktu, Mali 999 info@timbuktucc.org 234 816 704 1738</p>
+    </div>
+    <div>
+      <img src="images/youtube_icon.webp" alt="Youtube icon" loading="lazy">
+      <img src="images/twitter_icon.webp" alt="Twitter icon" loading="lazy">
+      <img src="images/instagram_icon.webp" alt="Instagram icon" loading="lazy">
+    </div>
+    <div>
+      <p>WDD231 Class Project</p>
+      <p>Chukwuebuka Ibeh &copy; <span id="currentyear"></span> Timbuktu Chamber of Commerce</p>
+      <p>Last Updated: <span id="lastModified"></span></p>
+    </div>
+    </div>
+  </footer>
+</body>
+
+</html>

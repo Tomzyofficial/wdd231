@@ -1,0 +1,276 @@
+:root {
+  --header-bg-color: #243642;
+  --additional-bg-color: lightgreen;
+  --black-color: #000;
+  --white: #fff;
+  --size: 1rem;
+  --gray-color: gray;
+  ---light-grey-color: #ddd;
+  /* --btn-bg-color: peru; */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+header {
+  background-color: var(--header-bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+header #logo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav .nav-menu {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  height: 50vh;
+  width: 60%;
+  position: fixed;
+  display: block;
+  left: 0;
+  top: 55px;
+  padding-left: 10px;
+  z-index: 1;
+  left: -100%;
+  transition: all ease-in-out .5s;
+}
+
+nav .nav-menu.show {
+  left: 0;
+}
+
+nav .nav-menu a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 1.2rem;
+  display: block;
+  padding-right: 30px;
+  padding-top: 40px;
+}
+
+.nav-menu a:hover {
+  color: yellow;
+  transition: all ease-in-out 0.5s;
+}
+
+.nav-menu a.active {
+  text-decoration: underline;
+}
+
+.nav-menu a.active:visited {
+  color: orange;
+}
+
+.toggler {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.toggler img {
+  width: 30px;
+  height: 30px;
+}
+
+.toggler #toggler-icon {
+  display: block;
+  cursor: pointer;
+  width: 40px;
+  height: 4px;
+  background-color: #000;
+  transition: all ease-out .4s;
+}
+
+#toggler-icon::before,
+#toggler-icon::after {
+  content: "";
+  display: block;
+  background-color: #000;
+  height: 4px;
+  width: 30px;
+}
+
+#toggler-icon::before {
+  transform: translateY(-7px);
+}
+
+#toggler-icon::after {
+  transform: translateY(4px);
+}
+
+#toggler-icon.open {
+  background-color: transparent;
+  transform: translateX(-10%);
+  transition: all ease-out .4s;
+}
+
+#toggler-icon.open::before {
+  transform: rotate(60deg);
+}
+
+#toggler-icon.open::after {
+  transform: rotate(-60deg);
+}
+
+main {
+  position: relative;
+}
+
+main img {
+  width: 100%;
+  height: 70vh;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+main a {
+  position: absolute;
+  background-color: var(--additional-bg-color);
+  color: var(--black-color);
+  padding: 10px;
+  right: 10px;
+  bottom: 170px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 200;
+}
+
+h1,
+.container {
+  margin: 30px 30px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.first-section,
+.sec-section,
+.third-section {
+  background-color: var(---light-grey-color);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  height: 300px;
+}
+
+.first-section h2,
+.sec-section h2,
+.third-section h2 {
+  background-color: var(--gray-color);
+  padding: 10px 10px;
+  color: var(--black-color);
+  text-align: start;
+}
+
+.sec-section .weather {
+  display: flex;
+  gap: 20px;
+}
+
+.sec-section .weather img {
+  width: 100px;
+  height: 100px;
+}
+
+.weather ul {
+  list-style: none;
+}
+
+.third-section ul {
+  list-style: none;
+  padding: 10px 10px;
+}
+
+.third-section ul li {
+  line-height: 30px;
+}
+
+/* Beginning of grid or list toggler */
+article {
+  display: none;
+}
+
+/* End of grid or list toggler */
+.cards {
+  margin: 100px 30px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+
+.card {
+  background-color: var(---light-grey-color);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  color: var(--black-color);
+}
+
+.card .top-card {
+  border-bottom: 2px solid var(--gray-color);
+  text-align: center;
+  padding: 10px 0;
+}
+
+.card .bottom {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 10px;
+  gap: 10px;
+}
+
+.card .bottom img {
+  width: 100px;
+  height: 80px;
+}
+
+.bottom p {
+  font-size: 13px;
+}
+
+.bottom p strong {
+  font-weight: bold;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--header-bg-color);
+  gap: 30px;
+  height: 55vh;
+  margin-top: 100px;
+  padding: 30px 10px;
+  color: var(--white);
+}
+
+footer img {
+  width: 50px;
+  height: 50px;
+}
+
+footer div:first-child {
+  width: 80%;
+}
+
+footer div:last-child {
+  width: 80%;
+}
