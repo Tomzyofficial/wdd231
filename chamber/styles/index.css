@@ -135,27 +135,44 @@ main {
   position: relative;
 }
 
-main img {
+main div {
+  background-image: url("../images/hero-img.webp");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
   width: 100%;
   height: 70vh;
-  background-repeat: no-repeat;
   position: relative;
+}
+
+main p {
+  position: absolute;
+  /* background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)); */
+  color: var(--white);
+  font-size: 2rem;
+  font-family: "Winky Sans", sans-serif;
+  top: 10vh;
+  left: 10px;
+  max-width: 350px;
+  /* height: 56vh; */
+  /* width: 400px; */
+
 }
 
 main a {
   position: absolute;
+  left: 20px;
+  bottom: 15vh;
   background-color: var(--additional-bg-color);
-  color: var(--black-color);
-  padding: 10px;
-  right: 10px;
-  bottom: 170px;
   border-radius: 30px;
   text-decoration: none;
-  font-weight: 200;
+  color: var(--black-color);
+  padding: 10px 20px;
 }
 
 h1,
-.container {
+.container,
+#members-card {
+  clear: left;
   margin: 30px 30px;
 }
 
@@ -205,14 +222,23 @@ h1,
   line-height: 30px;
 }
 
-/* Beginning of grid or list toggler */
 article {
-  display: none;
+  text-align: center;
+  color: #434242;
+  margin: 50px 30px;
 }
 
-/* End of grid or list toggler */
-.cards {
-  margin: 100px 30px;
+article h3 {
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+article h4 {
+  border-bottom: 2px solid #ffcc00;
+}
+
+.members-cards {
+  margin: 30px 0;
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 20px;
@@ -233,21 +259,17 @@ article {
 .card .bottom {
   display: flex;
   flex-wrap: wrap;
-  padding: 10px 10px;
-  gap: 10px;
+  padding: 10px 10PX;
+  gap: 5px;
 }
 
 .card .bottom img {
-  width: 100px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
 }
 
 .bottom p {
   font-size: 13px;
-}
-
-.bottom p strong {
-  font-weight: bold;
 }
 
 footer {
@@ -272,4 +294,63 @@ footer div:first-child {
 
 footer div:last-child {
   width: 80%;
+}
+
+@media screen and (min-width: 991px) {
+  nav .nav-menu {
+    display: flex;
+    height: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    position: relative;
+  }
+
+  nav .nav-menu a {
+    padding-top: 0;
+    color: #000;
+  }
+
+  .toggler #toggler-icon {
+    display: none;
+  }
+
+  main p {
+    font-size: 3rem;
+    left: 50px;
+    width: 650px;
+    max-width: 650px;
+    padding: 10px 20px;
+  }
+
+  main a {
+    left: 60px;
+    bottom: 8vh;
+    padding: 10px 20px;
+  }
+
+  .container,
+  .members-cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .first-section {
+    width: 500px;
+  }
+
+  footer {
+    justify-content: space-around;
+    flex-direction: row;
+    height: 30vh;
+    gap: 0;
+  }
+
+  footer div:first-child {
+    width: 30%;
+  }
+
+  footer div:last-child {
+    width: 30%;
+  }
 }

@@ -14,17 +14,17 @@
   <meta property="og:image" content="https://tomzyofficial.github.io/wdd231/chamber/directory.html">
   <link rel="icon" href="images/favicon.ico">
   <link rel="stylesheet" href="styles/normalize.css">
-  <link rel="stylesheet" href="styles/small-screen.css">
-  <link rel="stylesheet" href="styles/larger-screen.css">
+  <link rel="stylesheet" href="styles/index.css">
   <!-- google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
     rel="stylesheet">
-  <title>Timbuktu Chamber of Commerce</title>
+  <title>Timbuktu Chamber of Commerce Home Page</title>
+  <script src="scripts/weather.js" defer></script>
+  <script src="scripts/members.js" defer></script>
   <script src="scripts/app.js" defer></script>
-  <script src="scripts/grid-list.js" defer></script>
 </head>
 
 <body>
@@ -34,8 +34,8 @@
     </a>
     <nav>
       <div class="nav-menu">
-        <a href="index.html">Home</a>
-        <a href="directory.html" class="active">Directory</a>
+        <a href="index.html" class="active">Home</a>
+        <a href="directory.html">Directory</a>
         <a href="#">Join</a>
         <a href="#">Discover</a>
       </div>
@@ -47,8 +47,9 @@
   </header>
   <main>
     <div>
-      <img src="images/background-img.webp" alt="Hero image" loading="eager">
-      <a href="#">Keynote Tickets</a>
+      <!-- <img src="images/hero-img.webp" alt="Hero image" loading="eager"> -->
+      <p>Hey there! are you looking for the best marketplace to explore different varieties of local products?</p>
+      <a href="#">Explore Now</a>
     </div>
     <h1>Home</h1>
   </main>
@@ -59,32 +60,33 @@
     <div class="sec-section">
       <h2>Current Weather</h2>
       <div class="weather">
-        <img src="images/weather_cloud.svg" alt="Weather" loading="lazy">
+        <span id="weather-icon"></span>
         <ul>
-          <li><strong>75&deg;</strong>F</li>
-          <li>Partly Cloudy</li>
-          <li>High: 85&deg;</li>
-          <li>Low: 52&deg;</li>
-          <li>Humidity: 34%</li>
-          <li>Sunrise: 7:30am</li>
-          <li>Sunset: 9:59pm</li>
+          <li><strong id="temp"></strong></li>
+          <li id="desc"></li>
+
         </ul>
       </div>
     </div>
     <div class="third-section">
       <h2>Weather Forecast</h2>
       <ul>
-        <li>Today: <strong>90&deg;F</strong></li>
-        <li>Wednesday: <strong>89&deg;F</strong></li>
-        <li>Thursday: <strong>68&deg;F</strong></li>
+        <li>Saturday: <strong id="sat-forecast"></strong></li>
+        <li>Sunday: <strong id="sun-forecast"></strong></li>
+        <li>Monday: <strong id="mon-forecast"></strong></li>
       </ul>
     </div>
   </section>
   <article>
-    <button id="grid">⏹️Grid</button>
-    <button id="list">📄List</button>
+    <h3>Our mission</h3>
+    <p>The Timbuktu chamber of commerce is an economic agency that brings sellers and buyers together. This
+      economic champion promote business through members services and bring about community development. As a reliable
+      and exclusive chamber of commerce, we bridge the gap between customers and sellers.</p>
   </article>
-  <section class="cards"></section>
+  <article>
+    <h4 id="members">Our members</h4>
+    <div class="members-cards"></div>
+  </article>
   <footer>
     <div>
       <h3>Timbuktu Chamber of Commerce</h3>
