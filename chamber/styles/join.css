@@ -1,0 +1,113 @@
+form {
+  margin: 20px 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+}
+
+fieldset,
+label {
+  display: block;
+  width: 100%;
+}
+
+label {
+  margin-top: 10px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  width: 95%;
+  display: block;
+}
+
+select {
+  width: 99%;
+  padding: 10px;
+}
+
+button {
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all .4s ease;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+article {
+  animation: slide-up 1s ease;
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+#np-membership,
+#bronze-membership,
+#silver-membership,
+#gold-membership {
+  background-color: white;
+  border: 2px solid #ddd;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px;
+  border-radius: 10px;
+  color: #333;
+  padding: 10px 10px;
+  align-items: center;
+}
+
+#np-membership a,
+#bronze-membership a,
+#silver-membership a,
+#gold-membership a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  background-color: #333;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+#np-membership-modal,
+#bronze-membership-modal,
+#silver-membership-modal,
+#gold-membership-modal {
+  width: 30%;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#np-membership-modal::backdrop,
+#bronze-membership-modal::backdrop,
+#silver-membership-modal::backdrop,
+#gold-membership-modal::backdrop {
+  background: rgba(0, 0, 0, .8);
+}
+
+@media screen and (max-width: 600px) {
+  form {
+    grid-template-columns: 1fr;
+  }
+
+}

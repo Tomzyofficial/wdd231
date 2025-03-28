@@ -1,0 +1,9 @@
+article {
+  margin: 50px auto;
+  width: 40%;
+  text-align: center;
+}
+
+article .contents {
+  margin-top: 30px;
+}

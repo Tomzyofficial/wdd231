@@ -217,19 +217,6 @@ function getCourses() {
   }
   getTotalCredit();
 
-
-  /*  function creditCompleted(credit) {
-     const creditUl = document.getElementById("course-work");
-     creditUl.innerHTML = "";
- 
-     const totalCompleted = credit.filter(element => element.completed)
-     const completed = totalCredits(totalCompleted);
-     const list = document.createElement("li");
-     list.innerHTML = `Completed credits ${completed}`;
-     creditUl.appendChild(list)
-   }
-   creditCompleted(courses) */
-
   function wddCredCompleted(credit) {
     // Clear the initial credit value in the UI
     clearCredit();
@@ -253,3 +240,16 @@ function getCourses() {
   }
 }
 getCourses()
+
+
+const openDialog = document.getElementById("openDialog")
+const dialog = document.querySelector("dialog");
+const close = document.querySelector("#close")
+
+openDialog.addEventListener("click", () => {
+  dialog.showModal();
+})
+
+close.addEventListener("click", () => {
+  dialog.close();
+})

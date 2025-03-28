@@ -40,7 +40,6 @@ nav {
 }
 
 nav .nav-menu {
-  /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); */
   background-color: var(--white);
   height: 50vh;
   width: 60%;
@@ -59,7 +58,7 @@ nav .nav-menu.show {
 }
 
 nav .nav-menu a {
-  color: var(--black-color);
+  color: red;
   text-decoration: none;
   font-size: 1.2rem;
   display: block;
