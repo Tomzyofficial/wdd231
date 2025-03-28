@@ -5,10 +5,10 @@ const silver = document.querySelector("#silver-membership a");
 const gold = document.querySelector("#gold-membership a");
 
 // close buttons
-const closeNpModal = document.querySelector("#np-membership-modal #close");
-const closeBronzeModal = document.querySelector("#bronze-membership-modal #close");
-const closeSilverModal = document.querySelector("#silver-membership-modal #close");
-const closeGoldModal = document.querySelector("#gold-membership-modal #close");
+const closeNpModal = document.querySelector("#np-membership-modal button");
+const closeBronzeModal = document.querySelector("#bronze-membership-modal button");
+const closeSilverModal = document.querySelector("#silver-membership-modal button");
+const closeGoldModal = document.querySelector("#gold-membership-modal button");
 
 // modal dialog 
 const npModal = document.querySelector("#np-membership-modal");
