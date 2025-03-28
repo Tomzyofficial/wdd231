@@ -11,6 +11,12 @@ label {
   width: 100%;
 }
 
+.fill-form {
+  color: white;
+  text-align: center;
+  padding: 5px;
+}
+
 label {
   margin-top: 10px;
 }
