@@ -1,10 +1,30 @@
-@media only screen and (min-width: 38rem) {
+@media only screen and (min-width: 641px) {
   #places-card .individualCard {
     grid-template-areas:
-      "name"
+      "name name"
       "image desc"
       "image addr"
-      " button";
+      "button button";
+  }
+
+  .individualCard h2 {
+    grid-area: name;
+  }
+
+  .individualCard img {
+    grid-area: image;
+  }
+
+  .individualCard p {
+    grid-area: desc;
+  }
+
+  .individualCard address {
+    grid-area: addr;
+  }
+
+  .individualCard button {
+    grid-area: button;
 
   }
 }

@@ -1,4 +1,4 @@
-import { places } from "../data/places.mjs";
+import { places } from "../data/places.js";
 function displayPlaces(places) {
   places.forEach(element => {
     const theCard = document.createElement("div");
@@ -8,6 +8,7 @@ function displayPlaces(places) {
     const thePhoto = document.createElement("img");
     thePhoto.src = `images/${element.image}`;
     thePhoto.alt = element.name;
+    thePhoto.loading = "eager";
     fig.appendChild(thePhoto);
     theCard.appendChild(fig);
 
@@ -27,15 +28,6 @@ function displayPlaces(places) {
     btn.innerText = "Learn more";
     theCard.appendChild(btn);
 
-    // div.innerHTML = `
-    //   <figure>
-    //     <img src ="images/${element.image}" alt="Image" >
-    //   <figure/>
-    //   <h2>${element.name}<h2/>
-    //   <address>${element.address}<address/>
-    //   <p>${element.description}<p/>
-    //   <button>Learn more</>
-    // `;
     document.getElementById("places-card").appendChild(theCard)
   });
 }

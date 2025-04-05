@@ -1,0 +1,10 @@
+@media screen and (min-width: 1025px) {
+  #places-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .individualCard img:hover {
+    filter: blur(2px);
+  }
+}

@@ -1,15 +1,32 @@
-#places-card {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.discover {
   margin: 2rem auto;
   width: 90%;
+  color: #000;
+}
 
+#visitor-message {
+  color: #000;
+  font-size: large;
+  font-weight: medium;
+}
+
+
+#places-card {
+  display: grid;
+  grid-gap: 20px;
 }
 
 #places-card .individualCard {
-  background-color: #ccc;
   border: #999;
-  border-radius: 10px;
+  background-color: #eee;
+  border-radius: 8px;
   display: grid;
-  margin-top: 10px;
   grid-template-areas:
     "name"
     "image"
@@ -27,21 +44,24 @@
   grid-area: image;
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 .individualCard p {
   grid-area: desc;
-  margin: 10px;
+  margin: 1rem 10px;
 }
 
 .individualCard address {
   grid-area: addr;
-  margin: 10px;
+  margin: 1rem 10px;
 }
 
 .individualCard button {
+  background-color: #fff;
+  color: #000;
   padding: 10px;
-  margin: 10px;
+  margin: 1rem 10px;
   border-radius: 50px;
   border: none;
   cursor: pointer;
