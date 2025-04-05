@@ -15,15 +15,18 @@
   <link rel="icon" href="images/favicon.ico">
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles//discover-small.css">
+  <link rel="stylesheet" href="styles/discover-medium.css">
+  <link rel="stylesheet" href="styles/discover-large.css">
+
   <!-- google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
     rel="stylesheet">
-  <title>Timbuktu Chamber of Commerce Home Page</title>
-  <script src="scripts/weather.js" defer></script>
-  <script src="scripts/members.js" defer></script>
+  <title>Timbuktu Chamber of Commerce Home Page | Join</title>
+  <script src="scripts/places.js" defer type="module"></script>
   <script src="scripts/app.js" defer></script>
 </head>
 
@@ -34,10 +37,10 @@
     </a>
     <nav>
       <div class="nav-menu">
-        <a href="index.html" class="active">Home</a>
+        <a href="index.html">Home</a>
         <a href="directory.html">Directory</a>
         <a href="join.html">Join</a>
-        <a href="discover.html">Discover</a>
+        <a href="discover.html" class="active">Discover</a>
       </div>
       <div class="toggler">
         <img src="images/night-mode.webp" alt="Night mode" loading="eager">
@@ -45,48 +48,9 @@
       </div>
     </nav>
   </header>
-  <main>
-    <div>
-      <!-- <img src="images/hero-img.webp" alt="Hero image" loading="eager"> -->
-      <p>Hey there! are you looking for the best marketplace to explore different varieties of local products?</p>
-      <a href="#">Explore Now</a>
-    </div>
-    <h1>Home</h1>
-  </main>
-  <section class="container">
-    <div class="first-section">
-      <h2>Events</h2>
-    </div>
-    <div class="sec-section">
-      <h2>Current Weather</h2>
-      <div class="weather">
-        <span id="weather-icon"></span>
-        <ul>
-          <li><strong id="temp"></strong></li>
-          <li id="desc"></li>
-
-        </ul>
-      </div>
-    </div>
-    <div class="third-section">
-      <h2>Weather Forecast</h2>
-      <ul>
-        <li>Saturday: <strong id="sat-forecast"></strong></li>
-        <li>Sunday: <strong id="sun-forecast"></strong></li>
-        <li>Monday: <strong id="mon-forecast"></strong></li>
-      </ul>
-    </div>
+  <section>
+    <div id="places-card"></div>
   </section>
-  <article>
-    <h3>Our mission</h3>
-    <p>The Timbuktu chamber of commerce is an economic agency that brings sellers and buyers together. This
-      economic champion promote business through members services and bring about community development. As a reliable
-      and exclusive chamber of commerce, we bridge the gap between customers and sellers.</p>
-  </article>
-  <article>
-    <h4 id="members">Our members</h4>
-    <div class="members-cards"></div>
-  </article>
   <footer>
     <div>
       <h3>Timbuktu Chamber of Commerce</h3>

@@ -1,0 +1,49 @@
+#places-card {
+  margin: 2rem auto;
+  width: 90%;
+
+}
+
+#places-card .individualCard {
+  background-color: #ccc;
+  border: #999;
+  border-radius: 10px;
+  display: grid;
+  margin-top: 10px;
+  grid-template-areas:
+    "name"
+    "image"
+    "desc"
+    "addr"
+    "button";
+}
+
+.individualCard h2 {
+  grid-area: name;
+  margin: 1rem 10px;
+}
+
+.individualCard img {
+  grid-area: image;
+  width: 100%;
+  height: 100%;
+}
+
+.individualCard p {
+  grid-area: desc;
+  margin: 10px;
+}
+
+.individualCard address {
+  grid-area: addr;
+  margin: 10px;
+}
+
+.individualCard button {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  grid-area: button;
+}
