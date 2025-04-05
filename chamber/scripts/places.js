@@ -8,7 +8,7 @@ function displayPlaces(places) {
     const thePhoto = document.createElement("img");
     thePhoto.src = `images/${element.image}`;
     thePhoto.alt = element.name;
-    thePhoto.loading = "eager";
+    thePhoto.loading = "lazy";
     fig.appendChild(thePhoto);
     theCard.appendChild(fig);
 
