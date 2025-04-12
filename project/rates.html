@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="This is a platform where users can trade their cryptocurrencies">
+  <meta name="author" content="TomzyInstantPay">
+  <meta name="keywords" content="TomzyInstantPay, Bitcoin, Ethereum, Bitcoin Cash, Gift cards">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/rates.css">
+  <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+  <meta property="og:title" content="TomzyInstantPay">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tomzyofficial.github.io/wdd231/project/rate.html">
+  <meta property="og:image" content="https://tomzyofficial.github.io/wdd231/project/rate.html">
+  <title>Rates - TomzyInstantPay</title>
+  <link rel="icon" href="images/favicon.ico">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" defer></script>
+
+  <script src="scripts/site-functions.js" defer></script>
+  <script src="scripts/rate.mjs" defer type="module"></script>
+</head>
+
+<body>
+  <nav>
+    <a href="/project/" class="website-logo" aria-label="Site logo">
+      <img src="images/favicon.ico" alt="Site logo" loading="lazy">
+    </a>
+    <div>
+      <ul>
+        <li><a href="/project/" aria-label="Home link">home</a></li>
+        <li><a href="rates.html" class="active" aria-label="Rate link">rates</a></li>
+        <li><a href="contact.html" aria-label="Contact link">Contact</a></li>
+      </ul>
+      <div id="bars"></div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+      <div class="exchange-rate">
+        <h1>Fairest exchange rates</h1>
+        <i class="fa fa-bolt fa-lg" aria-hidden="true"></i>
+      </div>
+      <div>
+        <table>
+          <tr>
+            <th>Country</th>
+            <th>BTC</th>
+            <th>ETH</th>
+            <th>BCH</th>
+          </tr>
+
+        </table>
+      </div>
+      <div class="scroll-left">
+        <p id="prices"></p>
+      </div>
+    </div>
+    <div class="get-feedback">
+      <a href="#" class="whatsapp-feedback"><i class="fa fa-whatsapp"></i><span id="help"> Message Us</span></a>
+    </div>
+  </main>
+
+  <footer>
+    <!-- start main footer -->
+    <div id="footer">
+      <div>
+        <a href="/"><span class="site-logo">
+            <img src="images/favicon.ico" alt="Site logo" loading="lazy">
+        </a>
+      </div>
+      <div>
+        <h2>contact us</h2>
+        <ul>
+          <li>
+            <i class="fa fa-phone fa-lg"></i>
+            <span>+234 906-619-4749
+          </li>
+          <li>
+            <i class="fa fa-map-marker fa-lg"></i>
+            <span>
+              Nigeria
+            </span>
+          </li>
+          <li>
+            <i class="fa fa-envelope fa-lg"></i>
+            <span>
+              tomzyofficial54@gmail.com
+            </span>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2>important links</h2>
+        <ul>
+          <li><a href="rates.html" aria-label="Rate link">rates</a></li>
+          <li><a href="contact.html" aria-label="Contact link">contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>social media</h2>
+        <ul class="social-media-drops">
+          <li><a href="#" aria-label="Insta icon"><i class="fa fa-instagram fa-lg"></i></a></li>
+          <li><a href="#" aria-label="X icon"><i class="fa fa-twitter fa-lg"></i></a></li>
+          <li><a href="#" aria-label="Linked icon"><i class="fa fa-linkedin fa-lg"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
